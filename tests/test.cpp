@@ -3,10 +3,6 @@
 
 #include <gtest/gtest.h>
 
-#include <map>
-#include <string>
-#include <vector>
-
 #include <header.hpp>
 
 bool operator==(const Book& a, const Book& b)
@@ -111,7 +107,7 @@ TEST(TestLab, SaveBooks) {
     std::vector<Book> out;
     loadFromFile("file1", out);
     EXPECT_EQ(books, out);
-
+    out ={};
     loadFromFile("file2", out);
     EXPECT_TRUE(out.empty());
 }
@@ -157,7 +153,7 @@ TEST(TestLab, SaveStrings) {
     std::vector<std::string> out;
     loadFromFile("file1", out);
     EXPECT_EQ(data, out);
-
+    out = {};
     loadFromFile("file2", out);
     EXPECT_TRUE(out.empty());
 }
