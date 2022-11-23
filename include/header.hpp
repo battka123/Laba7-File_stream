@@ -1,7 +1,7 @@
 // Copyright 2022 Ivan Sushin i.suschin@yandex.ru
 
 #ifndef TEMPLATE_HEADER_HPP_
-#define TEMPLATE_HEADER_HPP
+#define TEMPLATE_HEADER_HPP_
 
 #include <algorithm>
 #include <fstream>

@@ -1,6 +1,6 @@
 // Copyright 2022 Ivan Sushin i.suschin@yandex.ru
 
-#include <header.hpp>
+#include "header.hpp"
 
 // first part
 void saveToFile(const std::string& filename, const Groups& groups) {
