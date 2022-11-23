@@ -5,10 +5,11 @@
 void saveToFile(const std::string& filename, const std::vector<Book>& data) {
   std::ofstream file;
   file.open(filename, std::fstream::out);
-  if (file.is_open())
+  if (file.is_open()) {
     for (const auto& i : data) {
       file << i.Author << '&' << i.Title << '&' << i.Year << '&';
     }
+  }
   file.close();
 }
 // Second_part

@@ -68,7 +68,8 @@ void loadFromFile(const std::string& filename, Groups& outGroups) {
         group = line;
       }
     }
-  } else
+  } else {
     outGroups = {};
+  }
   file.close();
 }
